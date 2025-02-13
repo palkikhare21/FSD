@@ -117,31 +117,67 @@
 
 // export default App
 
-7
-import React, { useEffect, useState } from 'react'
+// 7
+// import React, { useEffect, useState } from 'react'
 
-const App = () => {
-  let [count,Setcount]=useState
-  let [city,Setcity]=useState({
-    city:'delhi'
-  })
+// const App = () => {
+//   let [count,Setcount]=useState
+//   let [city,Setcity]=useState({
+//     city:'delhi'
+//   })
 
-  useEffect(()=>{
-    fetch('https://dummyjson.com/recipes').then((res)=>{
-      return res.json()
-    }).then((data)=>{
-      console.log(data);
+//   useEffect(()=>{
+//     fetch('https://dummyjson.com/recipes').then((res)=>{
+//       return res.json()
+//     }).then((data)=>{
+//       console.log(data);
       
-    })
-  },[count])
-  return (
-    <div>
-      <h2>{city}</h2>
-      <button onClick={()=>Setcity('bhopal')}>city</button>
-      <button onClick={()=>Setcount(count+1)}>click</button>
+//     })
+//   },[count])
+//   return (
+//     <div>
+//       <h2>{city}</h2>
+//       <button onClick={()=>Setcity('bhopal')}>city</button>
+//       <button onClick={()=>Setcount(count+1)}>click</button>
 
-    </div>
-  )
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React, { useEffect, useState } from 'react'
+import './App.css'
+const App = () => {
+    // let [count,SetCount]=   useState(0)
+    // let [city,SetCity]=   useState('delhi')
+    let [apiData,SetApi]=useState([])
+    // console.log('hello');
+    useEffect(()=>{
+      fetch('https://dummyjson.com/recipes').then((res)=>{
+        return res.json()
+    
+      }).then((data)=>{
+        console.log(data.recipes);
+        SetApi(data.recipes)
+      })
+
+    },[])
+
+  
+    return (
+      <div id='card'>  
+        {apiData.map((val, index) => {
+          return (
+            <div className='card-item'> 
+              <img src={val.image}  />
+              <p>{val.name}</p>
+            </div>
+          )
+        })}
+      </div>
+    );
 }
 
 export default App
