@@ -63,14 +63,14 @@
 //     console.log('odd');
     
 // else if statment
-let mode='pink';
-let color;
-if ( mode==='dark'){
-    color='black';
-}else if (mode==='pink'){
-    color='pink';
-}else{
-    color='white';
-}
-console.log(color);
+// let mode='pink';
+// let color;
+// if ( mode==='dark'){
+//     color='black';
+// }else if (mode==='pink'){
+//     color='pink';
+// }else{
+//     color='white';
+// }
+// console.log(color);
 
