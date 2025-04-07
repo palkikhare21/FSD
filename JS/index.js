@@ -74,3 +74,4 @@
 // }
 // console.log(color);
 
+//LOOPSSSS AND STRINGSSSSSSSS 

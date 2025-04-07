@@ -1,8 +1,9 @@
 div{
     height: 100px ;
-    width: 100px ;
+    width: 100px ; 
     background-color: darkred;
     background-color:pink ;
+
     
     animation-name: palki;
     animation-duration: 3s;
@@ -18,12 +19,15 @@ div:hover{
 }
 @keyframes palki {
     0%{
+    
         background-color: rgb(232, 49, 79);
     }
     50%{
+
         background-color: rgb(77, 2, 15);
     }
     100%{
+        
         background-color: rgb(239, 137, 154);
         width: 100vw;
         height: 100vh;
