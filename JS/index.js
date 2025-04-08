@@ -75,3 +75,23 @@
 // console.log(color);
 
 //LOOPSSSS AND STRINGSSSSSSSS 
+//for-of loop
+// let str="palkikhare";
+// let size=0;
+// for (let val of str){
+//     console.log("value=",val);
+//     size++;
+    
+// }
+// console.log("string size=",size);
+//for-in loop 
+let student ={
+    name:'palkikhare',
+    sem:6,
+    cgpa:7.21,
+    grade:'B',
+}
+for (let i in student){
+    console.log('i is=',i,student[i]);
+    
+}
