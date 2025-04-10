@@ -85,13 +85,28 @@
 // }
 // console.log("string size=",size);
 //for-in loop 
-let student ={
-    name:'palkikhare',
-    sem:6,
-    cgpa:7.21,
-    grade:'B',
-}
-for (let i in student){
-    console.log('i is=',i,student[i]);
+// let student ={
+//     name:'palkikhare',
+//     sem:6,
+//     cgpa:7.21,
+//     grade:'B',
+// }
+// for (let i in student){
+//     console.log('i is=',i,student[i]);
+    
+// }
+
+//ARRAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//LOOPING IN ARRAYSSSS 
+//For loop
+let heroes =["ironman","antman","spiderman","hulk","batman"]
+
+// for(let i=0;i<heroes.length;i++){
+//     console.log(heroes[i]);
+    
+// }
+//FOR-of
+for (let hero of heroes){
+    console.log(hero);
     
 }
