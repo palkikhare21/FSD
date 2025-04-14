@@ -99,14 +99,23 @@
 //ARRAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 //LOOPING IN ARRAYSSSS 
 //For loop
-let heroes =["ironman","antman","spiderman","hulk","batman"]
+// let heroes =["ironman","antman","spiderman","hulk","batman"]
 
-// for(let i=0;i<heroes.length;i++){
-//     console.log(heroes[i]);
+// // for(let i=0;i<heroes.length;i++){
+// //     console.log(heroes[i]);
+    
+// // }
+// //FOR-of
+// for (let hero of heroes){
+//     console.log(hero);
     
 // }
-//FOR-of
-for (let hero of heroes){
-    console.log(hero);
-    
-}
+
+// reduce
+ let arr =[1,2,3,4]
+
+ const output = arr.reduce((res , crr)=>{
+    return res + crr ;
+ });
+ console.log(output);
+ 
