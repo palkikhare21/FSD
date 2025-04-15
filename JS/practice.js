@@ -61,3 +61,9 @@
 //     console.log(num * num);
     
 // })   
+// let arr = [97,90,95,34,54]
+
+// let topper = arr.filter((val)=>{
+//     return val>90;
+// });
+// console.log(topper);

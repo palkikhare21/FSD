@@ -112,10 +112,10 @@
 // }
 
 // reduce
- let arr =[1,2,3,4]
+//  let arr =[1,2,3,4]
 
- const output = arr.reduce((res , crr)=>{
-    return res + crr ;
- });
- console.log(output);
+//  const output = arr.reduce((res , crr)=>{
+//     return res + crr ;
+//  });
+//  console.log(output);
  
