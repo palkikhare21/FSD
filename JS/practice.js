@@ -67,3 +67,7 @@
 //     return val>90;
 // });
 // console.log(topper);
+
+let h2 = document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText=h2.innerText + " from apan collaqge students";
