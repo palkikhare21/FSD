@@ -44,3 +44,22 @@ body{
     box-shadow: #D7B8F3;
 
 }
+#new-btn{
+    padding: 1rem;
+    font-size: 1,25rem;
+    background-color: #B8B8F3;
+    border-radius: 12%;
+    /* border: none; */
+    box-shadow: #D7B8F3;
+
+}
+#msg{
+    color: red;
+    font-size: 5vmin;
+}
+.msg-container{
+    height: 30vmin;
+}
+.hide{
+    display: none;
+}

@@ -59,7 +59,7 @@
 // import React from 'react'
 // import Length from './Length'
 
-
+ 
 // const App = () => {
 //  const[count,setCount] = React.useState(0)
 //   return (
@@ -92,31 +92,58 @@
 
 // export default App
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const App = () => {
-  const [time,setTime]= useState('');
-  let id;
-  function start(){
-    let id=setInterval(()=>{
-      const t= new Date().toLocaleTimeString();
-      setTime(t);
-    })
-    setid(id);
-  }
-  function setid(id){
-    id=id;
-  }
-  function stop(){
-      clearInterval(id);
-  } 
+// const App = () => {
+//   const [time,setTime]= useState('');
+//   let id;
+//   function start(){
+//     let id=setInterval(()=>{
+//       const t= new Date().toLocaleTimeString();
+//       setTime(t);
+//     })
+//     setid(id);
+//   }
+//   function setid(id){
+//     id=id;
+//   }
+//   function stop(){
+//       clearInterval(id);
+//   } 
    
   
+//   return (
+//     <div > 
+//       <h2>{time}</h2>
+//       <button onClick={()=>{start()}}>start</button>
+//       <button onClick={()=>{stop()}}>stop</button>
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import UseEffect from './UseEffect'
+// const App = () => {
+//   return (
+//     <div>
+//       <UseEffect />
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import Navbar from './Navbar'
+import Home from './Home'
+const App = () => {
   return (
-    <div > 
-      <h2>{time}</h2>
-      <button onClick={()=>{start()}}>start</button>
-      <button onClick={()=>{stop()}}>stop</button>
+    <div>
+      <Navbar />
+      <Homeome />
       
     </div>
   )
