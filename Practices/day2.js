@@ -81,13 +81,62 @@ let arr=[1,2,3,4,5,6,7,8]
 // console.log(maxValue);
 // console.log(Newarr);
 // console.log(secondMax);
-let arr1=[1,2]
-let merge=[]
-for(let i of arr){
-    merge.push(i)
+// let arr1=[1,2]
+// let merge=[]
+// for(let i of arr){
+//     merge.push(i)
    
-}
- console.log(merge);
+// }
+//  console.log(merge);
+
+let str = " javascript is awesome!";
+console.log("original string '"+ str + "'");
+
+//1.
+console.log("length",str.length);//includes space
+//2. trim
+console.log("trimmed",str.trim());//remove space
+
+//3.
+console.log("uppercase",str.toUpperCase());
+//4,
+console.log("lowercase",str.toLowerCase());
+//5.
+console.log("includes 'awesome:",str.includes("awesome"));
+//6.
+console.log("starts with ' java'",str.startsWith(" java"));
+//7.
+console.log("ends with '! ':",str.endsWith(!" "));
+//8.indexof
+console.log("'Index of 'is':",str.indexOf("is"));
+//9lastindexof
+console.log("last index of 'a':",str.lastIndexOf("a"));
+//10 charat
+console.log("character at index 5:",str.charAt(5));
+//11 substracting from index 2 to 10
+console.log("substracting (2,10):",str.substring(2,10));
+//12 slice
+console.log("slice(2,-1):",str.slice(2,-1));
+//13 split
+console.log("split by space:",str.trim().split(" "));
+//14  replace 
+// console.log("replace 'awesome" with 'powerfull':");
+//15 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
