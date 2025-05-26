@@ -145,14 +145,16 @@
 //     }
 // }
 // console.log(newStr);
-let arr1= [[1,2,3,4,5],[6,7,8,9,0]]
-// let data= arr1.map((a,b,c)=>a.map((res)=> {return res*2}))
-// console.log(data.flat());
-
-
- let totalValue = arr1.reduce((a,b)=>{
-    return a+b.reduce((val,res)=>{return val<res},0)
- },0)
+//  let totalValue = arr1.reduce((a,b)=>{
+//     return a+b.reduce((val,res)=>{return val<res},0)
+//  },0)
      
-console.log(totalValue); 
-//SUM OF ALL ELEMENT
+// console.log(totalValue); 
+let arr1= [[1,2,3,4,5],[6,7,8,9,0]]
+console.log(arr1.flat());
+//MAX VALUE
+let maxValue=arr1.reduce((max,current)=>{
+    return current>max?current:max
+},0)
+console.log(maxValue);
+
