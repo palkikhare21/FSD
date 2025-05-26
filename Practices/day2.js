@@ -56,7 +56,7 @@
 // console.log();
 //2nd max value
 //another array in dono ko compare n which has lagerest value
-let arr=[1,2,3,4,5,6,7,8]
+// let arr=[1,2,3,4,5,6,7,8]
 // console.log(arr.includes(3));
 // console.log(arr.indexOf(100));
 
@@ -89,66 +89,70 @@ let arr=[1,2,3,4,5,6,7,8]
 // }
 //  console.log(merge);
 
-let str = " javascript is awesome!";
-console.log("original string '"+ str + "'");
+// let str = " javascript is awesome!";
+// console.log("original string '"+ str + "'");
 
-//1.
-console.log("length",str.length);//includes space
-//2. trim
-console.log("trimmed",str.trim());//remove space
+// //1.
+// console.log("length",str.length);//includes space
+// //2. trim
+// console.log("trimmed",str.trim());//remove space
 
-//3.
-console.log("uppercase",str.toUpperCase());
-//4,
-console.log("lowercase",str.toLowerCase());
-//5.
-console.log("includes 'awesome:",str.includes("awesome"));
-//6.
-console.log("starts with ' java'",str.startsWith(" java"));
-//7.
-console.log("ends with '! ':",str.endsWith(!" "));
-//8.indexof
-console.log("'Index of 'is':",str.indexOf("is"));
-//9lastindexof
-console.log("last index of 'a':",str.lastIndexOf("a"));
-//10 charat
-console.log("character at index 5:",str.charAt(5));
-//11 substracting from index 2 to 10
-console.log("substracting (2,10):",str.substring(2,10));
-//12 slice
-console.log("slice(2,-1):",str.slice(2,-1));
-//13 split
-console.log("split by space:",str.trim().split(" "));
-//14  replace 
-// console.log("replace 'awesome" with 'powerfull':");
-//15 
+// //3.
+// console.log("uppercase",str.toUpperCase());
+// //4,
+// console.log("lowercase",str.toLowerCase());
+// //5.
+// console.log("includes 'awesome:",str.includes("awesome"));
+// //6.
+// console.log("starts with ' java'",str.startsWith(" java"));
+// //7.
+// console.log("ends with '! ':",str.endsWith(!" "));
+// //8.indexof
+// console.log("'Index of 'is':",str.indexOf("is"));
+// //9lastindexof
+// console.log("last index of 'a':",str.lastIndexOf("a"));
+// //10 charat
+// console.log("character at index 5:",str.charAt(5));
+// //11 substracting from index 2 to 10
+// console.log("substracting (2,10):",str.substring(2,10));
+// //12 slice
+// console.log("slice(2,-1):",str.slice(2,-1));
+// //13 split
+// console.log("split by space:",str.trim().split(" "));
+// //14  replace 
+// // console.log("replace 'awesome" with 'powerfull':");
+// //15  repeat
+// console.log("repeat 3 times:","js".repeat(3));
+// let str="javascript is awesome !";
 
+// let str="aaabbccaa";
+// let newStr=""
+// let count =1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// for(let i=0;i<str.length;i++){
+//     if(str[i]==str[i+i]){
+//         // count++
+//     }
+//     else{
+//         newStr+=str[i]+count
+//         count=1
+//     }
+// }
+// console.log(newStr);
+// for(let i=0;i<str.length;i++){
+//     if(!newStr.includes(str[i])){
+//         newStr[i]
+//     }
+// }
+// console.log(newStr);
+let arr1= [[1,2,3,4,5],[6,7,8,9,0]]
+// let data= arr1.map((a,b,c)=>a.map((res)=> {return res*2}))
+// console.log(data.flat());
 
 
+ let totalValue = arr1.reduce((a,b)=>{
+    return a+b.reduce((val,res)=>{return val<res},0)
+ },0)
+     
+console.log(totalValue); 
+//SUM OF ALL ELEMENT
