@@ -150,11 +150,20 @@
 //  },0)
      
 // console.log(totalValue); 
-let arr1= [[1,2,3,4,5],[6,7,8,9,0]]
-console.log(arr1.flat());
-//MAX VALUE
-let maxValue=arr1.reduce((max,current)=>{
-    return current>max?current:max
-},0)
-console.log(maxValue);
+// let arr1= [[1,2,3,4,5],[6,7,8,9,0]]
+// // console.log(arr1.flat());
+// // //MAX VALUE
+// // let maxValue=arr1.reduce((max,current)=>{
+// //     return current>max?current:max
+// // },0)
+// // console.log(maxValue);
+// for(let i=0;i<arr1.length; i++){
+// let rowSum=0;
+// for(let j=0;i<arr1[i].length;j++){
+//     rowSum = rowSum+arr1[i][j];
+    
+// }
+//     console.log(rowSum);
+
+// }
 
