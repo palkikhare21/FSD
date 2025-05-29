@@ -22,9 +22,27 @@
 // console.log(a);
 // var a=5
 
-sum()
-const sum=()=>{
-  console.log("helllloooo");
+// sum()
+// var sum=()=>{
+//   console.log("helllloooo");
   
-}
+// }
 
+// let a=5
+// a()
+// var a=1;
+// function foo(){
+//   console.log(a);
+//   var a=2;
+  
+// }
+// foo();
+// hoistTest();
+// var hoistTest=function (){
+//   console.log("hoisted?");
+  
+// };
+if(false){
+  var a=5;
+}
+console.log(a);
