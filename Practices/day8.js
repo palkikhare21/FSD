@@ -42,7 +42,14 @@
 //   console.log("hoisted?");
   
 // };
-if(false){
-  var a=5;
+// if(false){
+//   var a=5;
+// }
+// console.log(a);
+function sum(fn){
+  fn()
 }
-console.log(a);
+sum(function inner (){
+  console.log("inner");
+  
+})
