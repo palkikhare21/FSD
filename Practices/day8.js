@@ -53,17 +53,39 @@
 //   console.log("inner");
   
 // })
-let  obj={
-  name:"palki",
-  amount:300,
-  getBalance:function(){
-      console.log(this);
+// let  obj={
+//   name:"palki",
+//   amount:300,
+//   getBalance:function(){
+//       console.log(this);
       
-  }
-  // console.log(this);
+//   }
+//   // console.log(this);
   
-  // getBalance:()={
+//   // getBalance:()={
 
-  // }
-}
-obj.getBalance()
+//   // }
+// }
+// obj.getBalance()
+// let a=5; //jo data declare hota hai var ke sath unka sdata jata hai window ke pass
+// let obj={
+//   name:"palki",
+//   // a:44,
+//   amount:3000,
+//   getBalance:()=>{
+//     console.log(this.a);
+    
+//   }
+// }
+// obj.getBalance()
+//prototype
+// let obj={
+//   id:1,
+//   name:"palki"
+// }
+// // console.log(obj.lastname); //undefine
+// console.log(obj.__proto__);
+
+let str="Hello"
+console.log(str.toLowerCase());
+
