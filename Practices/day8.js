@@ -46,10 +46,24 @@
 //   var a=5;
 // }
 // console.log(a);
-function sum(fn){
-  fn()
-}
-sum(function inner (){
-  console.log("inner");
+// function sum(fn){
+//   fn()
+// }
+// sum(function inner (){
+//   console.log("inner");
   
-})
+// })
+let  obj={
+  name:"palki",
+  amount:300,
+  getBalance:function(){
+      console.log(this);
+      
+  }
+  // console.log(this);
+  
+  // getBalance:()={
+
+  // }
+}
+obj.getBalance()
