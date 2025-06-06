@@ -86,6 +86,30 @@
 // // console.log(obj.lastname); //undefine
 // console.log(obj.__proto__);
 
-let str="Hello"
-console.log(str.toLowerCase());
+// let str="Hello"
+// console.log(str.toLowerCase());
+// Array.prototype.myfilter=function(cb){
+//     console.log(cb);
+
+//     for(let i=0;i<this.length;i++){
+//         if(cb(this[i],i,this)){
+//             return this [i]
+//         }
+//     }
+//     return undefined
+    
+// }
+// let data= Array.myfilter( (a,b,c)=>{
+//         return a==5
+// })
+// console.log(data);
+
+let arr1=[1,2,3,4,5,6]
+Array.prototype.myReduce=function(cb,initialValue){
+
+}
+let sum=arr1.myReduce((a,b)=>{
+    return a+b
+},0)
+console.log(sum);
 
