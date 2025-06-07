@@ -104,17 +104,45 @@
 // })
 // console.log(data);
 
-let arr1=[1,2,3,4,5,6,7,8,9,10]
-Array.prototype.myReduce=function(cb,initialValue){
-    let acc=initialValue
-    for(let i=0;i<this.length;i++){
-        acc=cb(acc,this[i])
-    }
-    return acc
+// let arr1=[1,2,3,4,5,6,7,8,9,10]
+// Array.prototype.myReduce=function(cb,initialValue){
+//     let acc=initialValue
+//     for(let i=0;i<this.length;i++){
+//         acc=cb(acc,this[i])
+//     }
+//     return acc
+
+// }
+// let sum=arr1.myReduce((a,b)=>{
+//     return a+b
+// },0)
+// // console.log(sum);
+
+// let arr1=[1,2,3,4];
+// Array.prototype.myReduce=function(callback,context){
+//     for (let i=0;i<this.length;i++){
+//         if(this.indexOf(this[i])>-1){
+//             callback.call(context, this[i],i,this);
+//         }
+//     }
+// }
+// console.log(arr1);
+
+//call apply bind
+let obj={
+id:1,
+firstname:"palki",
+lastname:"khare",
+getFullName:function(age,isPass){
+    console.log(this.name+"  "+this.lastname+ "  "+age +" "+isPass);
+    
+}
 
 }
-let sum=arr1.myReduce((a,b)=>{
-    return a+b
-},0)
-console.log(sum);
-
+let obj1={
+    id:2,
+    name:"sakshi",
+    lastname:"jasiwal"
+}
+obj.getFullName.call(obj1,22)
+// obj.getFullName.apply(obj1,[22,true])
