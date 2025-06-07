@@ -129,20 +129,31 @@
 // console.log(arr1);
 
 //call apply bind
-let obj={
-id:1,
-firstname:"palki",
-lastname:"khare",
-getFullName:function(age,isPass){
-    console.log(this.name+"  "+this.lastname+ "  "+age +" "+isPass);
+// let obj={
+// id:1,
+// firstname:"palki",
+// lastname:"khare",
+// getFullName:function(age,isPass){
+//     console.log(this.name+"  "+this.lastname+ "  "+age +" "+isPass);
     
-}
+// }
+
+// }
+// let obj1={
+//     id:2,
+//     name:"sakshi",
+//     lastname:"jasiwal"
+// }
+// obj.getFullName.call(obj1,[22,true])
+// obj.getFullName.apply(obj1,[22,true])
+
+function user(){
 
 }
-let obj1={
-    id:2,
-    name:"sakshi",
-    lastname:"jasiwal"
-}
-obj.getFullName.call(obj1,22)
-// obj.getFullName.apply(obj1,[22,true])
+// let data = user()//output isma store kiya hai isiliye undefine hai
+// console.log(data);
+let data = new user()//created a construtor
+console.log(data);
+
+
+// console.log(user());
