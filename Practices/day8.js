@@ -165,12 +165,31 @@
 
 // console.log(user());
 //web api
-setTimeout(()=>{
-     console.log("hellooo");
+// setTimeout(()=>{
+//      console.log("hellooo");
      
-},0)
-setTimeout(()=>{
-     console.log("bye");
+// },0)
+// setTimeout(()=>{
+//      console.log("bye");
      
-},10)
-console.log("hiiii");
+// },10)
+// console.log("hiiii");
+ for(let i=1;i<=5;i++)
+setTimeout(() => {
+     console.log(i);
+     
+     
+},i*1000);
+   
+
+// setTimeout(() => {
+     
+// }, timeout);(()=>{
+//      console.log(2);
+     
+// },1)
+// setInterval(()=>{
+//      console.log(3);
+     
+// },2)
+// console.log("stop");
