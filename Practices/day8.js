@@ -147,14 +147,14 @@
 // obj.getFullName.call(obj1,[22,true])
 // obj.getFullName.apply(obj1,[22,true])
 
-function user(userName,lastname){
-     this.userName=this.userName,
-     this.lastName=this.lastName
-}
-let data= new user("rahul","jain")
-let data1= new user("palki","khare")
-console.log(data);
-console.log(data1);
+// function user(userName,lastname){
+//      this.userName=this.userName,
+//      this.lastName=this.lastName
+// }
+// let data= new user("rahul","jain")
+// let data1= new user("palki","khare")
+// console.log(data);
+// console.log(data1);
 
 
 // let data = user()//output isma store kiya hai isiliye undefine hai
@@ -164,3 +164,13 @@ console.log(data1);
 
 
 // console.log(user());
+//web api
+setTimeout(()=>{
+     console.log("hellooo");
+     
+},0)
+setTimeout(()=>{
+     console.log("bye");
+     
+},10)
+console.log("hiiii");
