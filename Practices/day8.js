@@ -193,3 +193,15 @@ setTimeout(() => {
      
 // },2)
 // console.log("stop");
+//let block scope hota hai uski value block ke bhr lag amni jati hai
+//var global variable hota hai uski value change ho jati hai
+function print(){
+     setTimeout(()=>{
+
+     },1000)
+     for(var i=1;i<=5;i++){
+          console.log(i);
+          
+     }
+}
+
