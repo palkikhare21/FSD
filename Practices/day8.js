@@ -174,12 +174,12 @@
      
 // },10)
 // console.log("hiiii");
- for(let i=1;i<=5;i++)
-setTimeout(() => {
-     console.log(i);
+//  for(let i=1;i<=5;i++)
+// setTimeout(() => {
+//      console.log(i);
      
      
-},i*1000);
+// },i*1000);
    
 
 // setTimeout(() => {
@@ -195,13 +195,54 @@ setTimeout(() => {
 // console.log("stop");
 //let block scope hota hai uski value block ke bhr lag amni jati hai
 //var global variable hota hai uski value change ho jati hai
-function print(){
-     setTimeout(()=>{
+// function print(){
+//      setTimeout(()=>{
 
-     },1000)
-     for(var i=1;i<=5;i++){
-          console.log(i);
+//      },1000)
+//      for(var i=1;i<=5;i++){
+//           console.log(i);
           
-     }
-}
+//      }
+// }
 
+// let arr=[1,2,3,4,5]
+// for(var i=0;i<=arr.length;i++){
+//      setTimeout(()=>{
+//           console.log(arr[i]);
+          
+//      },1000*i)
+     
+// }
+let step1= function(){
+  return new Promise((res,rej)=>{
+     setTimeout(()=>{
+          res("select photo")
+     },5000)
+  })
+}
+let step2= function(){
+  return new Promise((res,rej)=>{
+     setTimeout(()=>{
+          res("filterr")
+     },4000)
+  })
+}
+// //call back hell=>promise=>async await
+// step1().then((data)=>{
+//      console.log(data);
+//      return step2()
+     
+// }).then((filterr)=>{
+//      console.log(filterr);
+     
+// })
+
+async function call(){
+     let data= await step1()
+     console.log(data);
+     let data1=await step2()
+     console.log(data1);
+     
+     
+}
+call()
